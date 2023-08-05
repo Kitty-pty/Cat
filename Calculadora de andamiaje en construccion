@@ -1,0 +1,23 @@
+print("Bienvenido a la calculadora de andamiajes")
+Altura = float(input("¿Cual es la altura de trabajo? en metros:"))
+Torres = float(input("¿Cual es la cantidad de torres que requiere tu proyecto?:"))
+Andamios = float(input("La altura tipica de los andamios establecida es 1.50 metros. Ingresa la altura de tus andamios en metros:"))
+
+
+
+Plataformas=float(round (Torres*2))
+QAndamios=float(round((Altura/Andamios)*Torres))
+Marcos=float(round(QAndamios*2))
+Ruedas_pines=float(round(Torres*4))
+Pin_union=float(((Marcos*4)-(Ruedas_pines)- (Torres*4)))
+Crucetas=float(round(QAndamios*2))
+
+
+
+print(f"La cantidad de marcos de andamio es de  {Marcos} ")
+print(f"La cantidad de ruedas o pines de pines de piso es de {Ruedas_pines} ")
+print(f"La cantidad de pines de union es de {Pin_union} ")
+print(f"La cantidad de plataformas es  {Plataformas} ")
+print(f"La cantidad de crucetas es de  {Crucetas} ")
+
+print("Muchas gracias! Espero te sea de utilidad")
